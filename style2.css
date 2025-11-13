@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff3f0, #fce6e3);
+  color: #3c2a2a;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.hidden { display: none; }
+.page { display: none; padding: 60px 25px; }
+.page.active { display: block; }
+
+/* 🌸 Intro Screen */
+.intro-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fde8e4, #f5cfc5);
+  transition: opacity 1s ease-in-out;
+  position: relative;
+}
+
+.intro-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5em;
+  color: #a36b5e;
+  margin-bottom: 30px;
+}
+
+/* 🌸 Titles */
+.main-title, .section-title {
+  font-family: "Great Vibes", cursive;
+  color: #b6745c;
+}
+.main-title {
+  font-size: 4em;
+  text-shadow: 0 0 20px rgba(255, 192, 203, 0.6);
+}
+.section-title {
+  font-size: 2.6em;
+  margin-bottom: 25px;
+}
+
+/* 🌸 Journey Page */
+.journey-content {
+  font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #5b3531;
+  background: rgba(255, 240, 245, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(255, 182, 193, 0.4);
+  line-height: 1.8em;
+  text-align: left;
+  animation: fadeUp 2s ease forwards;
+}
+
+.journey-content p {
+  margin: 15px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: left;
+  text-shadow: 0 0 8px rgba(255, 220, 230, 0.5);
+}
+
+/* 🌸 Fade Animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌸 Responsive */
+@media (max-width: 480px) {
+  .main-title { font-size: 2.4em; }
+  .section-title { font-size: 1.8em; }
+  .journey-content { padding: 15px; font-size: 1em; }
+  .journey-content p { text-align: center; font-size: 1em; }
+}
